@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy | Podis</title>
+    <meta name="theme-color" content="#09090b" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* Premium Privacy Specific Styles */
+      .privacy-page {
+        padding: 6rem 0;
+        min-height: calc(100vh - 400px);
+      }
+      .page-header {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+      .page-header h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+      .page-header p {
+        font-size: 1.25rem;
+        color: var(--color-base-400);
+      }
+      
+      .prose-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: var(--color-base-950);
+        border: 1px solid rgba(255,255,255,0.05);
+        border-radius: 1.5rem;
+        padding: 3.5rem 4rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+
+      .prose {
+        color: var(--color-base-300);
+        line-height: 1.8;
+        font-size: 1.125rem;
+      }
+      .prose h2 {
+        color: var(--foreground);
+        margin-top: 3rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.75rem;
+        letter-spacing: -0.01em;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+      .prose h2:first-child {
+        margin-top: 0;
+      }
+      .prose p {
+        margin-bottom: 1.5rem;
+      }
+      .prose ul {
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .prose li {
+        margin-bottom: 0.75rem;
+      }
+      .prose strong {
+        color: var(--color-base-100);
+        font-weight: 600;
+      }
+      .prose a {
+        color: var(--color-primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      .prose a:hover {
+        color: var(--foreground);
+      }
+      @media (max-width: 768px) {
+        .prose-container {
+          padding: 2rem 1.5rem;
+        }
+        .page-header h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-1" data-parallax="0.12" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-2" data-parallax="0.2" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-3" data-parallax="0.08" aria-hidden="true"></div>
+    <header class="nav">
+      <div class="container">
+        <a class="brand" href="./index.html" aria-label="Podis home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5865F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          PODIS
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./index.html#how">Features</a>
+          <a href="./index.html#pricing">Pricing</a>
+          <a href="./index.html#faq">FAQ</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./privacy.html" class="active" aria-current="page">Privacy</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="btn btn-primary btn-sm" onclick="window.location.href='./index.html#waitlist'">Get Early Access</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="privacy-page container" data-parallax="0.03">
+      <div class="page-header fade-up">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: April 1, 2026</p>
+      </div>
+
+      <div class="prose-container fade-up" style="transition-delay: 150ms;" data-parallax="0.02">
+        <div class="prose">
+          <p>At Podis Software Inc., we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website, bot, and monetization services for Discord.</p>
+          
+          <h2>1. Information We Collect</h2>
+          <p>We only collect the information absolutely necessary to provide our service:</p>
+          <ul>
+            <li><strong>Account Information:</strong> Discord user ID, username, and avatar URL via explicit OAuth consent.</li>
+            <li><strong>Billing Information:</strong> Structured payout data strictly processed and stored by Stripe. We do not store raw credit card numbers.</li>
+            <li><strong>Community Configuration:</strong> The roles, tiers, and pricing rules you establish for your server.</li>
+          </ul>
+
+          <h2>2. How We Use Information</h2>
+          <p>Your information is used strictly to:</p>
+          <ul>
+            <li>Automatically assign and revoke premium Discord roles based on payment status.</li>
+            <li>Process transactions on your behalf and deliver payouts.</li>
+            <li>Send critical service updates regarding your community's active subscriptions.</li>
+          </ul>
+
+          <h2>3. Data Sharing & Third Parties</h2>
+          <p>We do not sell your data. We share relevant data only with necessary infrastructure providers:</p>
+          <ul>
+            <li><strong>Discord API:</strong> To sync statuses and apply roles.</li>
+            <li><strong>Stripe:</strong> To securely process transactions and direct deposits.</li>
+          </ul>
+
+          <h2>4. Data Retention and Deletion</h2>
+          <p>We retain your payout metadata and role histories for as long as your account remains active, primarily to handle failed payments and churn recovery (dunning). You may request an absolute deletion of all your community integration data at any point by contacting our support team.</p>
+
+          <h2>5. Your Rights</h2>
+          <p>Under the GDPR and CCPA, you have the right to access, rectify, or erase your personal data. Please submit any data subject requests to <a href="mailto:privacy@podis.com">privacy@podis.com</a>.</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-wrapper">
+      <footer class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-brand">
+            <a class="brand" href="./index.html" aria-label="Podis home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5865F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              PODIS
+            </a>
+            <p>The secure, automated way to monetize your Discord community. Built for professional creators.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="./index.html#how">Features</a></li>
+              <li><a href="./index.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="./index.html#faq">FAQ</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="#">API Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin: 0;">© 2026 Podis Software Inc. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" aria-label="Discord">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

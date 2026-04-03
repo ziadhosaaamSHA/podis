@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us | Podis</title>
+    <meta name="theme-color" content="#09090b" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* Premium Contact Specific Styles */
+      .contact-page {
+        padding: 6rem 0;
+        min-height: calc(100vh - 400px);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        align-items: flex-start;
+      }
+      @media (min-width: 900px) {
+        .contact-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 6rem;
+        }
+      }
+      .contact-text-content h1 {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+      }
+      .contact-text-content p {
+        font-size: 1.25rem;
+        color: var(--color-base-400);
+        margin-bottom: 3rem;
+        max-width: 460px;
+      }
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .contact-method-card {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid rgba(255,255,255,0.05);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+      }
+      .contact-method-card:hover {
+        background: rgba(255,255,255,0.05);
+        border-color: rgba(255,255,255,0.1);
+        transform: translateY(-2px);
+      }
+      .method-icon {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background: rgba(88, 101, 242, 0.1);
+        color: var(--color-primary);
+      }
+      .method-info h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.25rem;
+      }
+      .method-info span {
+        color: var(--color-base-400);
+        font-size: 0.875rem;
+      }
+
+      /* Premium Form Wrapper */
+      .contact-form-wrapper {
+        position: relative;
+        border-radius: 1.5rem;
+        background: var(--color-base-950);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1px;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      }
+      .contact-form-inner {
+        background: var(--card);
+        border-radius: calc(1.5rem - 1px);
+        padding: 3rem;
+        position: relative;
+        z-index: 10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .form-group {
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--color-base-300);
+        font-weight: 500;
+        font-size: 0.875rem;
+      }
+      .contact-input {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border-radius: 0.75rem;
+        background: rgba(0,0,0,0.3);
+        border: 1px solid var(--border);
+        color: var(--foreground);
+        font-family: inherit;
+        font-size: 1rem;
+        transition: all 0.2s ease;
+      }
+      .contact-input:focus {
+        outline: none;
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.15);
+        background: rgba(0,0,0,0.5);
+      }
+      .contact-input::placeholder {
+        color: var(--color-base-600);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-1" data-parallax="0.12" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-2" data-parallax="0.2" aria-hidden="true"></div>
+    <div class="parallax-layer parallax-layer-3" data-parallax="0.08" aria-hidden="true"></div>
+    <header class="nav">
+      <div class="container">
+        <a class="brand" href="./index.html" aria-label="Podis home">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5865F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          PODIS
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./index.html#how">Features</a>
+          <a href="./index.html#pricing">Pricing</a>
+          <a href="./index.html#faq">FAQ</a>
+          <a href="./contact.html" class="active" aria-current="page">Contact</a>
+          <a href="./privacy.html">Privacy</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="btn btn-primary btn-sm" onclick="window.location.href='./index.html#waitlist'">Get Early Access</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="contact-page container" data-parallax="0.04">
+      <div class="contact-grid">
+        <!-- Left Side: Content & Channels -->
+        <div class="contact-text-content fade-up">
+          <h1>Get in touch.</h1>
+          <p>We're building the infrastructure for the next generation of paid Discord communities. How can we help you scale?</p>
+
+          <div class="contact-methods">
+            <a href="mailto:support@podis.com" class="contact-method-card">
+              <div class="method-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="method-info">
+                <h3>Email Support</h3>
+                <span>support@podis.com</span>
+              </div>
+            </a>
+            
+            <a href="#" class="contact-method-card">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="method-info">
+                <h3>Discord Server</h3>
+                <span>Join community & announcements</span>
+              </div>
+            </a>
+
+            <a href="#" class="contact-method-card">
+              <div class="method-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+              </div>
+              <div class="method-info">
+                <h3>Twitter / X</h3>
+                <span>@podisHQ for updates</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Premium Form -->
+        <div class="contact-form-wrapper fade-up" style="transition-delay: 150ms;" data-parallax="0.03">
+          <div class="pricing-glow"></div> <!-- Reusing the animated glow -->
+          <div class="contact-form-inner">
+            <h2 style="font-size: 1.5rem; margin-bottom: 2rem; font-weight: 600;">Send us a message</h2>
+            <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="contact-input" required placeholder="Jane Doe" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input type="email" id="email" class="contact-input" required placeholder="jane@company.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">How can we help?</label>
+                <textarea id="message" class="contact-input" required placeholder="Tell us about your community size, goals, or any issues you're facing..." rows="4" style="resize: vertical; min-height: 100px;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; height: 3.5rem; font-size: 1.125rem;">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-wrapper">
+      <footer class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-brand">
+            <a class="brand" href="./index.html" aria-label="Podis home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5865F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              PODIS
+            </a>
+            <p>The secure, automated way to monetize your Discord community. Built for professional creators.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="./index.html#how">Features</a></li>
+              <li><a href="./index.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="./index.html#faq">FAQ</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+              <li><a href="#">API Documentation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin: 0;">© 2026 Podis Software Inc. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" aria-label="Discord">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
